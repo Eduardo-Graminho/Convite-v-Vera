@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de aniversário</title>
+</head>
+
+<body>
+    <div class="convite-card">
+        <header>
+            <p class="celeb-vida">CELEBRAÇÃO DA VIDA</p>
+            <p class="idade">92<br>ANOS</p>
+            <h1>Dona Vera</h1>
+            <p class="frase-abertura">Noventa e duas primaveras de sabedoria, ternura e histórias que iluminam nossas vidas.</p>
+        </header>
+        
+        <!--Parte principal do site-->
+        <main>
+            <!-- Informações do evento -->
+            <section>
+                <p class="frase-meio">Com o coração transbordando alegria, convidamos você e sua família para celebrarmos juntos este momento tão especial e abençoado.</p>
+                
+                <div class="bloco-data-hora">
+                    <div class="Data">
+                       <span class="rotulo">QUANDO</span>
+                       <span class="valor">Domingo, 06 de Dezembro</span>
+                    </div>
+
+                    <div class="separador"></div>
+
+                    <div class="Hora">
+                        <span class="rotulo">HORA</span>
+                        <span class="valor">12:00</span>
+                    </div>
+                </div>   
+
+            </section>
+
+            <!-- Aqui começa o formulário de confirmação de presença -->
+            <section class="sec-form">
+                <p class="confirme_sua_presenca">CONFIRME SUA PRESENÇA</p>
+            
+                <form class="formulario">
+                    <div class="nome_acompanhante"> 
+                        <label for="name">Seu nome completo.</label> 
+                        <input type="text" id="name" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="nome_acompanhante">
+                        <label for="total_pessoas">Total de pessoas (contando com você).</label>
+                        <input type="number" id="total_pessoas" min="1" placeholder="1" required>
+                    </div>
+
+                    <button class="botao",  type="submit">Confirmar Presença</button>
+                
+                </form>
+            </section>
+            <!--Aqui termina o formulário de confirmação de presença-->
+
+        </main>
+    <!--Fim da parte principal do site-->
+        <p class="rodape">Powered by Eduardo Graminho</p>
+    </div>
+</body>
+</html>

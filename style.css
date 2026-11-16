@@ -1,0 +1,212 @@
+/* 1. Variáveis: Nomes das cores utilizadas */
+:root {
+    --cor-fundo: rgb(235,240,230);               /* Marfim suave */
+    --cor-cartao: rgb(250,249,246);              /* Branco puro do cartão */
+    --cor-texto: #3D3832;               /* Marrom escuro elegante */
+    --cor-dourado: rgb(197,179,88);     /* Dourado clássico */
+    --cor-verde: #556B2F;               /* Verde sálvia */
+}
+
+/* 2. Reset: limpa as margens padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Fundo da página e centralização */
+body {
+    background-color:var(--cor-fundo);
+    color:var(--cor-texto);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 20px;
+}
+
+/* 4. O cartão do convite */
+.convite-card {
+    background-color: var(--cor-cartao);
+    max-width: 650px;                  /* Limita a largura para parecer um convite*/
+    margin: 20px auto;                 /* O 'auto' nas laterais centraliza o cartão na tela */
+    padding: 40px 30px;                /* Espaço interno para o texto não encostar na borda */
+    border: 1px solid #E6DEC8;       /* Borda delicada em tom champanhe */
+    border-radius: 16px;               /* Cantos levemente arredondados */
+    text-align:center;                 /* Centraliza os textos */
+}
+
+/* Cabeçalho CELEBRAÇÃO DA VIDA */
+.celeb-vida {
+    font-size: 0.75rem;     /* texto pegqueno e delicado */
+    letter-spacing: 3px;     /* Espaçamento entre as letras */
+    color: var(--cor-verde);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.frase-abertura {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color:var(--cor-verde);
+    max-width: 420px;
+    margin: 0 auto 30px auto;       /* Centraliza o parágrafo e dá espaço abaixo */
+}
+
+.frase-meio {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color:var(--cor-verde);
+    max-width: 420px;
+    margin: 0 auto 30px auto;       /* Centraliza o parágrafo e dá espaço abaixo */
+}
+
+h1 {
+    font-family:'Great Vibes','Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 3.5rem;          /* Nome grande*/
+    font-weight: 700;
+    color: var(--cor-dourado);
+    /*color: #556B2F;*/
+    line-height: 1.1;           /* Aproxima as linhas caso quebre em telas pequenas */
+    margin-bottom: 16px;
+}
+
+.idade {
+    /*Aqui começa: Deixa em formato de circulo a borda ao redor do nº 92 e cores*/ 
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 4.5px rgb(235,240,230), inset 0 0 0 5px var(--cor-dourado);
+    border: 1px dashed var(--cor-dourado);
+    background-color: rgb(235,240,230);
+    /* Aqui termina: Deixa em formato de circulo a borda ao redor do nº 92 e cores*/
+
+    display: flex;      /* Faz a caixa abraçar só o tamanho do texto*/
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--cor-dourado);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* INICIO Caixa de data e hora */
+.bloco-data-hora {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor-fundo); /* Fundo marfim suave dentro do cartão branco */
+    border: 1px solid #E6DEC8;
+    border-radius: 12px;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+}
+
+.Data, .Hora {
+    text-align: center;
+}
+
+.bloco-data-hora .rotulo {
+    
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--cor-dourado);
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Separador entre o horário e a data */
+.separador {
+    width: 1.5px;
+    height: 35px;
+    background-color: #D4C9B4;
+}
+
+.bloco-data-hora .valor {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color:var(--cor-verde)
+}
+/* FIM Caixa de data e hora */
+
+
+/* Mensagem de CONFIRME SUA PRESENÇA */
+.confirme_sua_presenca {
+    font-size: 1rem;     /* texto pegqueno e delicado */
+    letter-spacing: 3px;     /* Espaçamento entre as letras */
+    color: var(--cor-verde);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Aqui COMEÇA a configuração do layout, estilo e ações do formulário */
+.sec-form {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.nome_acompanhante {
+    text-align: left; /* Deixa o rótulo alinhado à esquerda do input */
+}
+
+.nome_acompanhante label {
+
+    display: block;
+    font-size: 0.8rem;
+    color: var(--cor-verde);
+    font-weight: 600;
+    margin-bottom:  6px;
+}
+
+.nome_acompanhante input {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: var(--cor-fundo);
+    border:  0px solid var(--cor-dourado);
+    border-bottom: 1px solid var(--cor-dourado);
+    border-radius: 8px;
+    font-family: 'Coemorant Garamond' serif;
+    font-size: 0.95rem;
+    color: var(--cor-texto);
+    outline: 0px;
+    transition: border-color 0.2s;
+}
+
+.botao {
+    display: flex;
+    margin: 0 auto;
+    padding: 13px 16px;
+    max-width: 150px;
+    margin-top: 15px;
+    background-color: var(--cor-verde);
+    font-family:'Cormorant Garamond';
+    color: aliceblue;
+    border: 0px solid;
+    border-width: 1px;
+    border-radius: 20px;
+}
+/* Aqui TERMINA a configuração do layout, estilo e ações do formulário */
+
+
+.rodape {
+    display: flex;
+    margin: 0 0 0 auto;
+    margin-top: 0.75rem;
+    max-width: 200px;
+    color:gray;
+    font-size: 0.75rem;
+}
