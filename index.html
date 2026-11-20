@@ -46,9 +46,9 @@
 
             <!-- Aqui começa o formulário de confirmação de presença -->
             <section class="sec-form">
-                <p class="confirme_sua_presenca">CONFIRME SUA PRESENÇA</p>
+                <p class="confirme_sua_presenca">CONFIRME SUA PRESENÇA ATÉ 01/12.</p>
             
-                <form class="formulario">
+                <form class="formulario" id="enviar-formulario">
                     <div class="nome_acompanhante"> 
                         <label for="name">Seu nome completo.</label> 
                         <input type="text" id="name" placeholder="Digite seu nome" required>
@@ -59,8 +59,9 @@
                         <input type="number" id="total_pessoas" min="1" placeholder="1" required>
                     </div>
 
-                    <button class="botao",  type="submit">Confirmar Presença</button>
-                
+                    <button class="botao", id="btn-enviar" type="submit">Confirmar</button>
+                    <p id="mensagem-status" style="text-align: center; font-weight: 800;"></p>
+
                 </form>
             </section>
             <!--Aqui termina o formulário de confirmação de presença-->
@@ -71,7 +72,7 @@
         <p class="rodape">
         <a href="https://github.com/Eduardo-Graminho" target="_blank">Powered by Eduardo Graminho</a>
         </p>
-
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
